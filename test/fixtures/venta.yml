@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2024-12-05
+  cliente: one
+  producto: one
+  cantidad_m2: 1.5
+  piezas_vendidas: 1
+  cajas_vendidas: 1
+  total: 1.5
+
+two:
+  fecha: 2024-12-05
+  cliente: two
+  producto: two
+  cantidad_m2: 1.5
+  piezas_vendidas: 1
+  cajas_vendidas: 1
+  total: 1.5

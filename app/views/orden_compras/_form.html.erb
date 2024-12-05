@@ -1,0 +1,37 @@
+<%= form_with(model: orden_compra) do |form| %>
+  <% if orden_compra.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(orden_compra.errors.count, "error") %> prohibited this orden_compra from being saved:</h2>
+
+      <ul>
+        <% orden_compra.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :fecha, style: "display: block" %>
+    <%= form.date_field :fecha %>
+  </div>
+
+  <div>
+    <%= form.label :proveedor_id, style: "display: block" %>
+    <%= form.text_field :proveedor_id %>
+  </div>
+
+  <div>
+    <%= form.label :total, style: "display: block" %>
+    <%= form.text_field :total %>
+  </div>
+
+  <div>
+    <%= form.label :estado, style: "display: block" %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

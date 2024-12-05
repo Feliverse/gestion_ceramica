@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  producto: one
+  cajas_completas: 1
+  piezas_sueltas: 1
+  area_total_m2: 1.5
+
+two:
+  producto: two
+  cajas_completas: 1
+  piezas_sueltas: 1
+  area_total_m2: 1.5

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @orden_compra %>
+
+<div>
+  <%= link_to "Edit this orden compra", edit_orden_compra_path(@orden_compra) %> |
+  <%= link_to "Back to orden compras", orden_compras_path %>
+
+  <%= button_to "Destroy this orden compra", @orden_compra, method: :delete %>
+</div>
