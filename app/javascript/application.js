@@ -4,8 +4,9 @@ import "controllers"
 
 // Importa Bootstrap y su dependencia Popper.js 
 import "bootstrap" 
-import "@popperjs/core" 
+import "@popperjs/core"
+ 
 // Importa jQuery 
 import $ from "jquery" 
 window.jQuery = $ 
-window.$ = $  
+window.$ = $
