@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  warehouse: one
+  date: 2024-12-10 17:02:31
+  total: 9.99
+
+two:
+  warehouse: two
+  date: 2024-12-10 17:02:31
+  total: 9.99

@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  price: 9.99
+  stock: 1
+  unit: MyString
+  weight_per_box: 9.99
+  m2_per_box: 9.99
+  pieces_per_box: 1
+
+two:
+  name: MyString
+  description: MyText
+  price: 9.99
+  stock: 1
+  unit: MyString
+  weight_per_box: 9.99
+  m2_per_box: 9.99
+  pieces_per_box: 1

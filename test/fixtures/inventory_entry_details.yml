@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  inventory_entry: one
+  product: one
+  quantity: 1
+  subtotal: 9.99
+
+two:
+  inventory_entry: two
+  product: two
+  quantity: 1
+  subtotal: 9.99

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Inventory entry details</h1>
+
+<div id="inventory_entry_details">
+  <% @inventory_entry_details.each do |inventory_entry_detail| %>
+    <%= render inventory_entry_detail %>
+    <p>
+      <%= link_to "Show this inventory entry detail", inventory_entry_detail %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New inventory entry detail", new_inventory_entry_detail_path %>

@@ -1,0 +1,62 @@
+<%= form_with(model: remission_note) do |form| %>
+  <% if remission_note.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(remission_note.errors.count, "error") %> prohibited this remission_note from being saved:</h2>
+
+      <ul>
+        <% remission_note.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :sale_id, style: "display: block" %>
+    <%= form.text_field :sale_id %>
+  </div>
+
+  <div>
+    <%= form.label :warehouse_id, style: "display: block" %>
+    <%= form.text_field :warehouse_id %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.datetime_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :client_id, style: "display: block" %>
+    <%= form.text_field :client_id %>
+  </div>
+
+  <div>
+    <%= form.label :client_phone, style: "display: block" %>
+    <%= form.text_field :client_phone %>
+  </div>
+
+  <div>
+    <%= form.label :delivery_address, style: "display: block" %>
+    <%= form.text_field :delivery_address %>
+  </div>
+
+  <div>
+    <%= form.label :warehouse_manager, style: "display: block" %>
+    <%= form.text_field :warehouse_manager %>
+  </div>
+
+  <div>
+    <%= form.label :driver, style: "display: block" %>
+    <%= form.text_field :driver %>
+  </div>
+
+  <div>
+    <%= form.label :total_weight, style: "display: block" %>
+    <%= form.text_field :total_weight %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

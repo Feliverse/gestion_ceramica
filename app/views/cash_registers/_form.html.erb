@@ -1,0 +1,32 @@
+<%= form_with(model: cash_register) do |form| %>
+  <% if cash_register.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(cash_register.errors.count, "error") %> prohibited this cash_register from being saved:</h2>
+
+      <ul>
+        <% cash_register.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :sale_id, style: "display: block" %>
+    <%= form.text_field :sale_id %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.datetime_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :total_amount, style: "display: block" %>
+    <%= form.text_field :total_amount %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

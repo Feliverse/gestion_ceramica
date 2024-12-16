@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @transfer_detail %>
+
+<div>
+  <%= link_to "Edit this transfer detail", edit_transfer_detail_path(@transfer_detail) %> |
+  <%= link_to "Back to transfer details", transfer_details_path %>
+
+  <%= button_to "Destroy this transfer detail", @transfer_detail, method: :delete %>
+</div>

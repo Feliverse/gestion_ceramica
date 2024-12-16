@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sale: one
+  warehouse: one
+  date: 2024-12-10 17:03:17
+  client: one
+  client_phone: MyString
+  delivery_address: MyString
+  warehouse_manager: MyString
+  driver: MyString
+  total_weight: 9.99
+
+two:
+  sale: two
+  warehouse: two
+  date: 2024-12-10 17:03:17
+  client: two
+  client_phone: MyString
+  delivery_address: MyString
+  warehouse_manager: MyString
+  driver: MyString
+  total_weight: 9.99

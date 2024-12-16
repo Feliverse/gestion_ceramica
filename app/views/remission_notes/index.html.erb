@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Remission notes</h1>
+
+<div id="remission_notes">
+  <% @remission_notes.each do |remission_note| %>
+    <%= render remission_note %>
+    <p>
+      <%= link_to "Show this remission note", remission_note %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New remission note", new_remission_note_path %>
